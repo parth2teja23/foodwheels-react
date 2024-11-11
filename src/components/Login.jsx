@@ -6,14 +6,14 @@ import { Link, useNavigate } from 'react-router-dom';
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const navigate = useNavigate(); // Initialize useNavigate hook
+  const navigate = useNavigate();
 
   const handleLogin = async (e) => {
-    e.preventDefault(); // Prevent page refresh on form submit
+    e.preventDefault(); 
     try {
       await signInWithEmailAndPassword(auth, email, password);
       alert('Login successful');
-      navigate('/restaurants'); // Redirect to Restaurants page after login
+      navigate('/restaurants'); 
     } catch (error) {
       alert(error.message);
     }
