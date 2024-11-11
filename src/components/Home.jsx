@@ -1,8 +1,6 @@
 'use client';
 
-import { useState } from 'react';
-import { Dialog, DialogPanel } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { Link } from "react-router-dom";
 
 const navigation = [
   { name: 'Home', href: '/' },
@@ -46,15 +44,15 @@ export default function Example() {
 
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
-                href="#"
+              <Link
+                to="/restaurants"
                 className="rounded-md bg-[#fdae45] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#ffc982] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Order Now
-              </a>
-              <a href="#" className="text-sm font-semibold text-gray-900">
+              </Link>
+              {/* <a href="#" className="text-sm font-semibold text-gray-900">
                 Learn more <span aria-hidden="true">→</span>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

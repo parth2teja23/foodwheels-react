@@ -5,8 +5,10 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import Home from './components/Home.jsx'
 import Restaurants from './components/Restaurants.jsx'
 import Cart from './components/Cart.jsx'
-import User from './components/User.jsx'
+import Menu from './components/Menu.jsx'
 import Layout from './Layout.jsx'
+import Login from './components/Login.jsx'
+import Signup from './components/Signup.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -14,7 +16,9 @@ const router = createBrowserRouter(
       <Route path='' element={<Home />} />
       <Route path='restaurants' element={<Restaurants />} />
       <Route path='cart' element={<Cart />} />
-      <Route path='user/:userid' element={<User />} />
+      <Route path="/menus/:name" element={<Menu />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
     </Route>
   )
 )

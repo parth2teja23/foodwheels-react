@@ -1,0 +1,63 @@
+{
+    "restaurants": [
+      {
+        "id": 1,
+        "name": "La Pino's Pizza",
+        "image": "https://images.pexels.com/photos/1653877/pexels-photo-1653877.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "cuisine": "Italian",
+        "menu": [
+          {"id": 1,
+           "image": "https://images.pexels.com/photos/20115306/pexels-photo-20115306/free-photo-of-top-view-of-a-pizza-margherita.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+           "name": "Margherita Pizza",
+           "price": 149},
+          {"id": 2,
+           "image": "https://www.archanaskitchen.com//images/archanaskitchen/1-Author/Waagmi_Soni/Gralic_Crust_Veggie_Pizza.jpg",
+           "name": "Veggie Loaded Pizza", 
+           "price": 199}
+        ]
+      },
+      {
+        "id": 2,
+        "image": "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "name": "Panjaab 11",
+        "cuisine": "North Indian",
+        "menu": [
+          {"id": 1,
+          "image": "https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+           "name": "Garlic Naan with gravy",
+            "price": 99},
+          {"id": 2, 
+           "image": "https://images.pexels.com/photos/28674561/pexels-photo-28674561/free-photo-of-delicious-indian-dal-makhani-in-elegant-pan.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+           "name": "Daal Makhani", 
+           "price": 79}
+        ]
+      },
+      {
+        "id": 3,
+        "image": "https://images.pexels.com/photos/941869/pexels-photo-941869.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "name": "South Point",
+        "cuisine": "South Indian",
+        "menu": [
+          {"id": 1,
+          "image": "https://images.pexels.com/photos/20422126/pexels-photo-20422126/free-photo-of-meal-on-plate-and-bowls-of-sauces-around.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "name": "Masala Dosa", "price": 99},
+          {"id": 2,
+          "image": "https://images.pexels.com/photos/20422126/pexels-photo-20422126/free-photo-of-meal-on-plate-and-bowls-of-sauces-around.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "name": "Uttapam", "price": 129},
+          {"id": 3,
+          "image": "https://images.pexels.com/photos/20422126/pexels-photo-20422126/free-photo-of-meal-on-plate-and-bowls-of-sauces-around.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "name": "Idly Sambar", "price": 79},
+          {"id": 4,
+          "image": "https://images.pexels.com/photos/20422126/pexels-photo-20422126/free-photo-of-meal-on-plate-and-bowls-of-sauces-around.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "name": "Medu Vada", "price": 59},
+          {"id": 5,
+          "image": "https://images.pexels.com/photos/20422126/pexels-photo-20422126/free-photo-of-meal-on-plate-and-bowls-of-sauces-around.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "name": "Vada Pav", "price": 69},
+          {"id": 6,
+          "image": "https://images.pexels.com/photos/20422126/pexels-photo-20422126/free-photo-of-meal-on-plate-and-bowls-of-sauces-around.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "name": "Appam", "price": 79}
+        ]
+      }
+    ]
+  }
+  
