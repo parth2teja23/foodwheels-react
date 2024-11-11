@@ -9,7 +9,7 @@ function Card({ username, btnText = "Visit Me!", image, price, showPrice = true,
       <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
       <div className="absolute bottom-4 left-4 text-left">
         <h1 className="text-lg font-semibold text-white">{username}</h1>
-        {showPrice && <p className="text-sm text-gray-300">${price}</p>}
+        {showPrice && <p className="text-sm text-gray-300">Rs.{price}</p>}
         <button 
           onClick={onButtonClick} // Call onButtonClick passed from parent component
           className="mt-2 inline-flex items-center text-sm font-semibold text-white bg-transparent px-2 py-1 rounded"

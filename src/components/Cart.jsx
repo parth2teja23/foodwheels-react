@@ -7,21 +7,18 @@ function Cart() {
   const [coupon, setCoupon] = useState('');
   const [discountApplied, setDiscountApplied] = useState(false);
 
-  // Load cart items from localStorage on component mount
   useEffect(() => {
     const storedCart = JSON.parse(localStorage.getItem('cart')) || [];
     setCartItems(storedCart);
     calculateTotal(storedCart);
   }, []);
 
-  // Calculate total price based on cart items
   const calculateTotal = (items) => {
     const sum = items.reduce((acc, item) => acc + item.price, 0);
     setTotal(sum);
-    setDiscountedTotal(sum); // Set initial discounted total to the original total
+    setDiscountedTotal(sum); 
   };
 
-  // Remove item from cart
   const removeFromCart = (index) => {
     const updatedCart = [...cartItems];
     updatedCart.splice(index, 1);
@@ -30,13 +27,12 @@ function Cart() {
     calculateTotal(updatedCart);
   };
 
-  // Apply coupon for a 20% discount if the code is "CUPUNJAB"
   const applyCoupon = () => {
     if (coupon === 'CUPUNJAB' && !discountApplied) {
-      const discount = total * 0.2; // 20% discount
+      const discount = total * 0.2; 
       setDiscountedTotal(total - discount);
       setDiscountApplied(true);
-      alert('Coupon applied! 20% discount applied to your total.');
+      // alert('Coupon applied! 20% discount applied to your total.');
     } else if (discountApplied) {
       alert('Coupon already applied!');
     } else {
@@ -75,16 +71,16 @@ function Cart() {
             />
             <button
               onClick={applyCoupon}
-              className="px-4 py-2 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700"
+              className="px-4 py-2 bg-green-500 text-white font-semibold rounded-md hover:bg-green-700"
             >
               Apply Coupon
             </button>
           </div>
 
           <div className="mt-6 text-lg font-semibold">
-            <p>Total Price: ${total.toFixed(2)}</p>
+            <p>Total Price: Rs.{total.toFixed(2)}</p>
             {discountApplied && (
-              <p className="text-green-600">Discounted Price: ${discountedTotal.toFixed(2)}</p>
+              <p className="text-green-600">Discounted Price: Rs.{discountedTotal.toFixed(2)}</p>
             )}
           </div>
         </div>

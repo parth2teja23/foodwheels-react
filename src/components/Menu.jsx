@@ -18,7 +18,6 @@ function RestaurantMenu() {
       .catch((error) => console.error('Error fetching data:', error));
   }, [name]);
 
-  // Function to add an item to the cart using localStorage
   const addToCart = (dish) => {
     const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
     cartItems.push(dish);
@@ -43,7 +42,7 @@ function RestaurantMenu() {
             image={dish.image}
             price={dish.price}
             showPrice={true}
-            onButtonClick={() => addToCart(dish)} // Pass addToCart function as onButtonClick
+            onButtonClick={() => addToCart(dish)}
           />
         ))}
       </div>

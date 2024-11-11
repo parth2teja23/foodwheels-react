@@ -8,7 +8,7 @@ function Signup() {
   const [password, setPassword] = useState('');
 
   const handleSignup = async (e) => {
-    e.preventDefault(); // Prevent form from refreshing the page
+    e.preventDefault();
     try {
       await createUserWithEmailAndPassword(auth, email, password);
       alert('Signup successful');

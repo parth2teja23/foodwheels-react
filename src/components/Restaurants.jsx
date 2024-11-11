@@ -22,8 +22,8 @@ function Restaurants() {
               username={restaurant.name}
               btnText="Visit"
               image={restaurant.image}
-              showPrice={false} // Hide price for restaurants page
-              onButtonClick={() => {}} // Optional, or you can leave this out entirely
+              showPrice={false} 
+              onButtonClick={() => {}}
             />
           </Link>
         ))}
