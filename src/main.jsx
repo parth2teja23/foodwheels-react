@@ -9,11 +9,16 @@ import Menu from './components/Menu.jsx'
 import Layout from './Layout.jsx'
 import Login from './components/Login.jsx'
 import Signup from './components/Signup.jsx'
-
+import CategoryPage from './components/CategoryPage.jsx'
+import Products from './components/Products.jsx'
+import Documents from './components/Documents.jsx'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
       <Route path='' element={<Home />} />
+      <Route path='/category' element={<CategoryPage />} />
+      <Route path='/documents' element={<Documents />} />
+      <Route path='/products' element={<Products />} />
       <Route path='restaurants' element={<Restaurants />} />
       <Route path='cart' element={<Cart />} />
       <Route path="/menus/:name" element={<Menu />} />
